@@ -25,7 +25,6 @@ h2 {
     vertical-align: baseline;
 }
 body {
-    line-height: 1;
     font-family: "Poppins", sans-serif;
     color: rgb(49, 49, 49);
 }
@@ -33,6 +32,10 @@ body {
 a {
     text-decoration: none;
     color: rgb(49, 49, 49);
+}
+ol,
+ul {
+    list-style: none;
 }
 
 /*
@@ -42,4 +45,98 @@ a {
     width: 1200px;
     height: auto;
     margin: auto;
+    overflow: hidden;
+}
+
+.button {
+    background: #ffbf86;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 25px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+.align-item-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-right {
+    justify-content: right;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+.gap {
+    gap: 2rem;
+}
+
+/*
+ * ─── 🎃 HEADER ─────────────────────────────────────────────────────────────────────
+ */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigation-link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*
+ * ─── 🍍 SECTION 2 ──────────────────────────────────────────────────────────────────
+ */
+.section-2 {
+    height: 100%;
+    margin-top: 4rem;
+}
+.s2-left {
+    width: 704px;
+}
+.s2-left h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.s2-right {
+    width: 496px;
+}
+.s2-img-container {
+    background-image: url("./images/Circle-design.svg");
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s2-img-container img {
+    height: 410px;
+}
+
+/*
+ * ─── 🍉 SECTION 3 ──────────────────────────────────────────────────────────────────
+ */
+
+.section-3 {
+    margin-top: 2rem;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    padding: 5px;
+    border-image-source: linear-gradient(to left,#fdfdfd, #f3f3f3, #fdfdfd);
 }
