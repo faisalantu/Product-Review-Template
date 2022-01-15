@@ -281,6 +281,11 @@ ul {
     padding: 9px;
     margin-top: 20px;
     margin-bottom: 10px;
+    border: 1px solid rgb(180, 179, 179);
+}
+.newsletter-right input:focus {
+    outline: none !important;
+    border: 1px solid #fb8200;
 }
 
 /*
@@ -481,7 +486,7 @@ ul {
     .newsletter-left img {
         width: 200px;
     }
-   
+
     .newsletter-right {
         display: flex;
         justify-content: center;
@@ -656,34 +661,34 @@ ul {
     /*
  * ─── 🍇 SECTION 5 Newsletter ──────────────────────────────────────────────────────────────────
  */
- .section-5 {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 3rem;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 4rem;
-}
+    .section-5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 4rem;
+    }
 
-.newsletter-left img {
-    width: 250px;
-}
+    .newsletter-left img {
+        width: 250px;
+    }
 
-.newsletter-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-.newsletter-right h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.newsletter-right input {
-    padding: 9px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
+    .newsletter-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .newsletter-right h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .newsletter-right input {
+        padding: 9px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }
