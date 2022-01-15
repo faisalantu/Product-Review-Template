@@ -60,6 +60,29 @@ ul {
     color: black;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.sqr-button {
+    background: #ffbf86;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+    margin: 2px;
+}
+.sqr-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .flex {
@@ -129,6 +152,10 @@ ul {
 }
 .s2-img-container img {
     height: 410px;
+    transition: transform 0.2s;
+}
+.s2-img-container img:hover {
+    transform: scale(1.05);
 }
 
 /*
@@ -146,6 +173,10 @@ ul {
     border-width: 2px;
     padding: 5px;
     border-image-source: linear-gradient(to left, #fdfdfd, #f3f3f3, #fdfdfd);
+}
+
+.section-3 li:hover {
+    transform: scale(1.05);
 }
 
 /*
@@ -168,6 +199,7 @@ ul {
     gap: 30px;
     grid-template-columns: auto auto auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -176,6 +208,12 @@ ul {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 15px;
+    transition: transform 0.2s;
+}
+.grid-item:hover {
+    transform: scale(1.05);
+
+    cursor: pointer;
 }
 .grid-item img {
     width: 100%;
@@ -215,7 +253,38 @@ ul {
 }
 
 /*
- * ─── FOOTER ─────────────────────────────────────────────────────────────────────
+ * ─── 🍇 SECTION 5 Newsletter ──────────────────────────────────────────────────────────────────
+ */
+.section-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem;
+}
+
+.newsletter-left img {
+    width: 400px;
+}
+.newsletter-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-right h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.newsletter-right input {
+    padding: 9px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*
+ * ─── 🍒 FOOTER ─────────────────────────────────────────────────────────────────────
  */
 
 .footer {
@@ -395,6 +464,40 @@ ul {
         font-weight: 500;
         font-size: 14px;
     }
+
+    /*
+ * ─── 🍇 SECTION 5 Newsletter ──────────────────────────────────────────────────────────────────
+ */
+    .section-5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 4rem;
+    }
+
+    .newsletter-left img {
+        width: 200px;
+    }
+   
+    .newsletter-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .newsletter-right h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .newsletter-right input {
+        padding: 9px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -546,4 +649,41 @@ ul {
         font-weight: 500;
         font-size: 14px;
     }
+    .card-button {
+        justify-content: center;
+    }
+
+    /*
+ * ─── 🍇 SECTION 5 Newsletter ──────────────────────────────────────────────────────────────────
+ */
+ .section-5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem;
+}
+
+.newsletter-left img {
+    width: 250px;
+}
+
+.newsletter-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.newsletter-right h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.newsletter-right input {
+    padding: 9px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 }
