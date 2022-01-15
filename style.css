@@ -94,6 +94,12 @@ ul {
     font-size: 16px;
     font-weight: 500;
 }
+.header {
+    padding: 1rem;
+}
+.header-sm {
+    display: none;
+}
 
 /*
  * ─── 🍍 SECTION 2 ──────────────────────────────────────────────────────────────────
@@ -226,7 +232,7 @@ ul {
 .footer p {
     line-height: 1;
 }
-.footer > div{
+.footer > div {
     gap: 10px;
 }
 
@@ -239,4 +245,305 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: auto;
+    }
+    .header-lg {
+        display: none;
+    }
+    .header-sm {
+        display: flex;
+    }
+
+    /*
+     * ─── 🍍 SECTION 2 ──────────────────────────────────────────────────────────────────
+     */
+    .section-2 {
+        height: 100%;
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2-left {
+        width: auto;
+        text-align: center;
+        padding: 15px;
+    }
+    .s2-left h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 55px;
+    }
+
+    .s2-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s2-img-container {
+        background-image: url("./images/Circle-design.svg");
+        width: 320px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .s2-img-container img {
+        height: 250px;
+    }
+    /*
+     * ─── SECTION 3 ──────────────────────────────────────────────────────────────────
+     */
+
+    .section-3 {
+        margin-top: 2rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        padding: 15px;
+        border-image-source: linear-gradient(
+            to left,
+            #fdfdfd,
+            #f3f3f3,
+            #fdfdfd
+        );
+        flex-wrap: wrap;
+    }
+    .section-3 ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    /*
+ * ─── 🍓 SECTION-4 ──────────────────────────────────────────────────────────────────
+ */
+
+    .section-4 {
+        margin-top: 3rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .section-4 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-4 > h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .grid-container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 292px;
+        height: 476px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .grid-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .grid-item p {
+        line-height: 1;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+    .grid-item h2 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+    .grid-item span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .grid-item ul > li {
+        color: #fb8200;
+        font-size: 14px;
+    }
+    .grid-item ul span {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-left: 8px;
+    }
+
+    .card-des {
+        color: #787885;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+    .header-lg {
+        display: none;
+    }
+    .header-sm {
+        display: flex;
+    }
+    .container {
+        width: auto;
+    }
+
+    /*
+     * ─── 🍍 SECTION 2 ──────────────────────────────────────────────────────────────────
+     */
+    .section-2 {
+        height: 100%;
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2-left {
+        width: auto;
+        text-align: center;
+        padding: 15px;
+    }
+    .s2-left h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 55px;
+    }
+
+    .s2-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s2-img-container {
+        background-image: url("./images/Circle-design.svg");
+        width: 320px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .s2-img-container img {
+        height: 250px;
+    }
+
+    /*
+     * ─── SECTION 3 ──────────────────────────────────────────────────────────────────
+     */
+
+    .section-3 {
+        margin-top: 2rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        padding: 15px;
+        border-image-source: linear-gradient(
+            to left,
+            #fdfdfd,
+            #f3f3f3,
+            #fdfdfd
+        );
+        flex-wrap: wrap;
+    }
+    .section-3 ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    /*
+ * ─── 🍓 SECTION-4 ──────────────────────────────────────────────────────────────────
+ */
+
+    .section-4 {
+        margin-top: 3rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .section-4 > h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .grid-container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+        justify-self: center;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 292px;
+        height: 476px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .grid-item:nth-child(odd) {
+        justify-self: end;
+    }
+    .grid-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .grid-item p {
+        line-height: 1;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+    .grid-item h2 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+    .grid-item span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .grid-item ul > li {
+        color: #fb8200;
+        font-size: 14px;
+    }
+    .grid-item ul span {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-left: 8px;
+    }
+
+    .card-des {
+        color: #787885;
+        font-weight: 500;
+        font-size: 14px;
+    }
 }
